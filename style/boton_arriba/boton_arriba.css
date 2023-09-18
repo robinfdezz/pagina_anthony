@@ -1,0 +1,68 @@
+.boton_flotante{
+    display: none;
+}
+
+.boton_arriba {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 50;
+}
+
+.contenedor_arriba {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.div_fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #006adb;
+    border-radius: 10px;
+    animation: circleAnimation 3s infinite;
+    -webkit-animation: circleAnimation 3s infinite;
+}
+
+.boton_imagen {
+    width: 100%;
+    height: 100%;
+    background-color: #00438a;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.2s ease;
+}
+
+.boton_imagen:hover {
+    background-color: #1172b3;
+}
+
+.boton_imagen img {
+    width: 100%;
+    transform: rotate(-90deg);
+}
+
+@keyframes circleAnimation {
+    0% {
+        transform: scale(1);
+        opacity: .2;
+    }
+
+    40% {
+        transform: scale(1.4);
+        opacity: 0;
+}
+
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+}
+}

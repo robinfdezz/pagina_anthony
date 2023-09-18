@@ -1,0 +1,64 @@
+.footer_preguntas-frecuentes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_preguntas--contenedor {
+    background-color: #00356d;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 7px #00000018;
+}
+
+.titulo_pregunta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.titulo_pregunta:hover {
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.footer_cuestion {
+    font-size: 1.1rem;
+    font-family: 'Raleway';
+}
+
+.footer_icono {
+    width: 25px;
+}
+
+.respuesta_pregunta {
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    font-family: 'Raleway';
+    display: none;
+}
+
+/*? Clases para cambio con javascript */
+.footer_icono--activo {
+    transform: rotate(90deg);
+    opacity: 1;
+}
+
+.respuesta_pregunta--activo {
+    display: flex;
+    opacity: 0.9;
+}
+
+/*! Para hacerlo responsive */
+/* Estilos para PC (a partir de 1025px) */
+@media screen and (min-width: 1025px) {
+    .footer_preguntas-frecuentes {
+        width: 50%;
+        order: 3;
+    }
+}

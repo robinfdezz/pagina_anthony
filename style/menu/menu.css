@@ -1,0 +1,254 @@
+.menu_contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_contenedor--Logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80PX;
+    background-color: #f0f0f0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.07);
+}
+
+.menu_imagen {
+    width: 180px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.menu_imagen:hover {
+    opacity: 0.88;
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}
+
+.menu_contenedor--boton {
+    width: 55px;
+    height: 55px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.menu_contenedor--boton:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.166);
+    transition: 0.2s ease;
+}
+
+.menu_span {
+    position: relative;
+    width: 80%;
+    height: 7px;
+    border-radius: 4px;
+    margin-top: 8px;
+    background-color: rgba(117, 117, 117, 0.514);
+    transition: 0.2s ease;
+}
+
+.menu_span-1{
+    width: 60%;
+}
+
+.menu_span-3{
+    width: 60%;
+}
+
+/*? clases para agregar y eliminar al hacer click en el boton*/
+.menu_span-1-active {
+    transform: rotate(45deg);
+    background-color: #002853;
+    top: 14px;
+    width: 90%;
+}
+
+.menu_span-2-active {
+    display: none;
+}
+
+.menu_span-3-active {
+    transform: rotate(-45deg);
+    background-color: #002853;
+    width: 90%;
+}
+
+/*? Lista menu*/
+.menu_opciones {
+    display: none;
+    padding-bottom: 30px;
+}
+
+.menu_opciones-inactivo {
+    background-color: #002853;
+    width: 100%;
+    height: 40vh;
+    font-family: 'Raleway';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: aparicion 0.2s ease-in-out;
+    animation-fill-mode: forwards;
+    box-shadow: 0 5px 10px #0000003e;
+}
+
+.menu_opciones--links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 100%;
+    height: 100%;
+}
+
+.menu_opciones--linkOpcion {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.menu_opciones--linkOpcion:hover {
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.menu_contacto {
+    display: none;
+}
+
+@keyframes aparicion {
+    0% {
+        opacity: 0;
+        height: 0vh;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*! Para hacerlo responsive */
+/* Estilos para tablet (de 601px a 1024px) */
+@media screen and (max-width: 1024px) {
+.menu_opciones {
+        z-index: 20;
+        position: fixed;
+    }
+.menu_opciones-inactivo {
+    background-color: #002853;
+    width: 100%;
+    height: 40vh;
+    font-family: 'Raleway';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: aparicion 0.2s ease-in-out;
+    animation-fill-mode: forwards;
+    box-shadow: 0 5px 10px #0000003e;
+}
+}
+
+/* Estilos para PC (a partir de 1025px) */
+@media screen and (min-width: 1025px) {
+    #inicio_menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.07);
+    }
+
+    .menu_contenedor {
+        width: 20%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu_contenedor--Logo {
+        justify-content: center;
+        width: 100%;
+        height: 11vh;
+        background-color: #ffffff00;
+        box-shadow: none;
+    }
+
+    .menu_contenedor--boton {
+        display: none;
+    }
+
+    .menu_opciones {
+        font-family: 'Raleway';
+        display: flex;
+        width: 80%;
+        justify-content: end;
+        padding-bottom: 0px;
+    }
+
+    .menu_opciones--links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu_opciones--links {
+        margin-top: 0;
+        width: 70%;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .menu_opciones--linkOpcion {
+        margin-top: 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: rgb(97, 97, 97);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .menu_opciones--linkOpcion:hover {
+        transition: 0.2s ease;
+        background-color: #0056b114;
+    }
+
+    .menu_opciones--linkOpcion:hover a {
+        color: #00356d;
+    }
+
+    .menu_contacto {
+        display: flex;
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        letter-spacing: 3px;
+        font-family: 'Raleway';
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .menu_contacto--link {
+        padding: 15px 20px;
+        background-color: #1D90DF;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .menu_contacto--link:hover {
+        background-color: #0055b1;
+        transition: 0.2s ease;
+        box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.273);
+    }
+}

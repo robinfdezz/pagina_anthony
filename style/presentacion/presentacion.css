@@ -1,0 +1,162 @@
+.presentacion_contenedor {
+    display: flex;
+    height: calc((100vh) - (80px));
+    flex-direction: column;
+    background-image: url('../../recursos/fotos/vector-lineas-3.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.presentacion_contenedor--izquierdo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.presentacion_titulo {
+    font-family: 'Raleway';
+    font-size: 2.5rem;
+    color: rgb(58, 58, 58);
+    margin-bottom: 10px;
+    padding: 10px 15px 0 15px;
+}
+
+.presentacion_titulo span {
+    font-size: 3.4rem;
+    font-weight: bold;
+    color: #1D90DF;
+}
+
+.presentacion_descripcion {
+    font-family: 'Raleway';
+    font-size: 1.3rem;
+    color: rgb(58, 58, 58);
+    padding: 0px 15px;
+}
+
+.presentacion_contenedor--derecho {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.presentacion_contenedor--derecho img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.presentacion_contacto {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.presentacion--link {
+    padding: 15px 20px;
+    background-color: #1D90DF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.presentacion--link:hover {
+    background-color: #0055b1;
+    transition: 0.2s ease;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.273);
+}
+
+/*! Para hacerlo responsive */
+/* Estilos para tablet (de 601px a 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .presentacion_contenedor {
+        flex-direction: row;
+        width: 100%;
+        background-image: url('../../recursos/fotos/vector-lineas-2.png');
+        background-position: center bottom;
+    }
+
+    .presentacion_contenedor--izquierdo {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .presentacion_titulo {
+        font-size: 2rem;
+        padding: 0 0 0 20px;
+    }
+
+    .presentacion_titulo span {
+        font-size: 3.4rem;
+    }
+
+    .presentacion_descripcion {
+        padding: 0 10px 0 20px;
+    }
+
+    .presentacion_contenedor--derecho {
+        width: 50%;
+        align-items: center;
+    }
+
+    .presentacion_contenedor--derecho img {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 0;
+    }
+
+    .presentacion_contacto {
+        margin-top: 40px;
+    }
+}
+
+/* Estilos para PC (a partir de 1025px) */
+@media screen and (min-width: 1025px) {
+    .presentacion_contenedor {
+        flex-direction: row;
+        height: calc((100vh) - (60px));
+        background-image: url('../../recursos/fotos/vector-lineas.png');
+        background-position: center bottom;
+    }
+
+    .presentacion_contenedor--izquierdo {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .presentacion_titulo {
+        font-size: 4rem;
+        padding: 0 0 0 20px;
+        color: #4b4b4b;
+    }
+
+    .presentacion_titulo span {
+        font-size: 5rem;
+    }
+
+    .presentacion_descripcion {
+        padding: 0 10px 0 23px;
+        font-size: 2rem;
+        color: #4b4b4b;
+    }
+
+    .presentacion_contenedor--derecho {
+        width: 50%;
+        align-items: center;
+    }
+
+    .presentacion_contenedor--derecho img {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .presentacion_contacto {
+        display: none;
+    }
+}
