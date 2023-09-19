@@ -1,0 +1,8 @@
+.container_ofertas{
+    width: 100%;
+    height: 500px;
+    background-image: url('../../recursos/fotos/vector-lineas-4.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}

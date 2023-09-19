@@ -1,5 +1,312 @@
-#viajes{
+#viajes {
+    width: 100%;
+    background-color: #0091E3;
+    padding: 30px 0;
+}
+
+.contenedor_viajes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.viajes_titulo {
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway';
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contenedor_carta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.cartas_excursiones {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    width: 320px;
+    box-shadow: 1px 3px 10px #00000034;
+}
+
+.foto_excursion {
     width: 100%;
     height: 200px;
-    background-color: aqua;
+}
+
+.informacion_excursion {
+    display: flex;
+    flex-direction: column;
+}
+
+.informacion_titulo {
+    font-family: 'Raleway';
+    margin: 10px 0 10px 8px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(58, 58, 58);
+}
+
+.informacion_iconos {
+    padding: 0 10px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.informacion_iconos img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    opacity: 0.6;
+}
+
+.informacion_descripcion {
+    font-family: 'Raleway';
+    padding: 0 8px 30px 8px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: rgb(58, 58, 58);
+}
+
+.informacion_descripcion span {
+    color: #1D90DF;
+    font-weight: bold;
+}
+
+/*! PARA EL CARRUSEL */
+.slider {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .list {
+    position: absolute;
+    width: max-content;
+    height: 200px;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.slider .list img {
+    width: 1000px;
+    max-width: 100vw;
+    height: 200px;
+    object-fit: cover;
+}
+
+.slider .buttons {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: 'Raleway';
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .buttons button:hover img {
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.buttons img {
+    opacity: 0.6;
+    width: 20px;
+}
+
+.slider .dots {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.slider .dots li:hover {
+    opacity: 1;
+    transition: 0.2s ease;
+}
+
+.slider .dots li.active {
+    width: 30px;
+}
+
+/*! PARA EL CARRUSEL FIN*/
+
+.contenedor_ilustracion {
+    display: none;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .viajes_titulo {
+        font-size: 2.8rem;
+        margin-bottom: 60px;
+    }
+
+    .contenedor_carta {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cartas_excursiones {
+        width: 80%;
+        box-shadow: 1px 3px 15px #00000037;
+    }
+
+    .foto_excursion {
+        width: 100%;
+        height: 280px;
+    }
+
+    .informacion_titulo {
+        font-size: 2.3rem;
+    }
+
+    .informacion_descripcion {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    /*! PARA EL CARRUSEL */
+    .slider {
+        height: 280px;
+    }
+
+    .slider .list {
+        height: 280px;
+    }
+
+    .slider .list img {
+        height: 280px;
+        object-position: 0 -10px; /* Esto centrará la imagen */
+    }
+
+    .slider .dots {
+        top: 250px;
+    }
+
+    /*! PARA EL CARRUSEL FIN*/
+}
+
+/* Estilos para PC (a partir de 1025px) */
+@media screen and (min-width: 1025px) {
+    .viajes_titulo {
+        font-size: 3rem;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .contenedor_carta {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .cartas_excursiones {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .foto_excursion {
+        width: 60%;
+        height: 350px;
+    }
+
+    .informacion_excursion {
+        width: 40%;
+    }
+
+    .informacion_titulo {
+        margin: 20px 0 20px 20px;
+        font-size: 2rem;
+    }
+
+    .informacion_iconos {
+        padding: 0 30px;
+        margin-bottom: 15px;
+    }
+
+    .informacion_iconos img {
+        width: 25px;
+        height: 25px;
+        opacity: 0.7;
+    }
+
+    .informacion_descripcion {
+        padding: 0 30px 30px 20px;
+        font-size: 1.4rem;
+    }
+
+    /*! PARA EL CARRUSEL */
+    .slider {
+        height: 400px;
+    }
+
+    .slider .list {
+        height: 400px;
+    }
+
+    .slider .list img {
+    height: 350px;
+}
+
+    .slider .dots {
+        top: 320px;
+    }
+
+    /*! PARA EL CARRUSEL FIN*/
+
+    .contenedor_ilustracion {
+        display: none;
+    }
+
+    /*? CAMBIAR ORDEN FOTOS CARTAS*/
+    .contenedor_excursion--caballos .cartas_excursiones .foto_excursion {
+        order: 2;
+    }
 }
