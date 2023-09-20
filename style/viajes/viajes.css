@@ -222,7 +222,8 @@
 
     .slider .list img {
         height: 280px;
-        object-position: 0 -10px; /* Esto centrará la imagen */
+        object-position: 0 -10px;
+        /* Esto centrará la imagen */
     }
 
     .slider .dots {
@@ -235,19 +236,21 @@
 /* Estilos para PC (a partir de 1025px) */
 @media screen and (min-width: 1025px) {
     .viajes_titulo {
-        font-size: 3rem;
+        font-size: 4rem;
         margin-top: 20px;
         margin-bottom: 60px;
     }
 
     .contenedor_carta {
+        width: 100%;
         flex-direction: row;
         justify-content: center;
         margin-bottom: 30px;
     }
 
     .cartas_excursiones {
-        width: 70%;
+        width: 60%;
+        height: 350px;
         display: flex;
         flex-direction: row;
     }
@@ -259,16 +262,17 @@
 
     .informacion_excursion {
         width: 40%;
+
     }
 
     .informacion_titulo {
-        margin: 20px 0 20px 20px;
+        margin: 20px 0 13px 20px;
         font-size: 2rem;
     }
 
     .informacion_iconos {
-        padding: 0 30px;
-        margin-bottom: 15px;
+        padding: 0 20px;
+        margin-bottom: 10px;
     }
 
     .informacion_iconos img {
@@ -278,22 +282,57 @@
     }
 
     .informacion_descripcion {
-        padding: 0 30px 30px 20px;
+        padding: 0 10px 30px 20px;
         font-size: 1.4rem;
     }
 
+    .contenedor_ilustracion {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ilustracion-1 {
+        animation: FiguraFlotante 10s infinite;
+        width: 300px;
+}
+
+.ilustracion-sombra-1{
+    width: 150px;
+    animation: sombra 10s infinite;
+}
+
+    .ilustracion-2 {
+        animation: FiguraFlotante 13s infinite;
+        width: 300px;
+    }
+
+    .ilustracion-sombra-2{
+        width: 150px;
+        animation: sombra 13s infinite;
+}
+
     /*! PARA EL CARRUSEL */
     .slider {
-        height: 400px;
+        height: 100%;
+        height: 350px;
     }
 
     .slider .list {
-        height: 400px;
+        height: 100%;
     }
 
     .slider .list img {
-    height: 350px;
-}
+        width: 100%;
+        height: 350px;
+    }
+
+    .slider .buttons {
+        top: 45%;
+    }
 
     .slider .dots {
         top: 320px;
@@ -301,12 +340,38 @@
 
     /*! PARA EL CARRUSEL FIN*/
 
-    .contenedor_ilustracion {
-        display: none;
-    }
-
     /*? CAMBIAR ORDEN FOTOS CARTAS*/
     .contenedor_excursion--caballos .cartas_excursiones .foto_excursion {
         order: 2;
     }
+
+    .contenedor_excursion--caballos .cartas_excursiones {
+        order: 2;
+    }
+}
+
+
+/*? ANIMACION PARA ICONOS ILUSTRACION */
+@keyframes FiguraFlotante {
+    0%,
+    100% {
+        transform: scale(1) translateY(0) rotate(0);
+}
+
+    50% {
+        transform: scale(1.04) translateY(-20px) rotate(-2deg);
+}
+}
+
+@keyframes sombra {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.2;
+}
+
+    50% {
+        transform: scale(0.7);
+        opacity: 0.05;
+}
 }
