@@ -23,18 +23,21 @@
 
 .footer_ubicacion ul li{
     margin-top: 20px;
-    opacity: 0.7;
-    padding: 5px 20px
-}
-
-.footer_ubicacion ul li:hover{
-    opacity: 1;
-    transition: 0.3s ease;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .footer_ubicacion li a{
+    opacity: 0.7;
     display: flex;
     align-items: center;
+}
+
+.footer_ubicacion li a:hover{
+    opacity: 1;
+    transition: 0.3s ease;
 }
 
 .footer_ubicacion li a p{
@@ -52,6 +55,10 @@
 
 .footer_ubicacion span{
     transform: translatex(-10px) translateY(-13px);
+    -webkit-transform: translatex(-10px) translateY(-13px);
+    -moz-transform: translatex(-10px) translateY(-13px);
+    -ms-transform: translatex(-10px) translateY(-13px);
+    -o-transform: translatex(-10px) translateY(-13px);
 }
 
 /*! Para hacerlo responsive */

@@ -15,7 +15,6 @@ var respuestaActiva2 = true;
 var respuestaActiva3 = true;
 
 pregunta1.addEventListener('click', function () {
-    console.log("Cliqueando menu");
     if (respuestaActiva1) {
         icono1.classList.add("footer_icono--activo");
         respuesta1.classList.add("respuesta_pregunta--activo");
@@ -28,7 +27,6 @@ pregunta1.addEventListener('click', function () {
 });
 
 pregunta2.addEventListener('click', function () {
-    console.log("Cliqueando menu");
     if (respuestaActiva2) {
         icono2.classList.add("footer_icono--activo");
         respuesta2.classList.add("respuesta_pregunta--activo");
@@ -41,7 +39,6 @@ pregunta2.addEventListener('click', function () {
 });
 
 pregunta3.addEventListener('click', function () {
-    console.log("Cliqueando menu");
     if (respuestaActiva3) {
         icono3.classList.add("footer_icono--activo");
         respuesta3.classList.add("respuesta_pregunta--activo");

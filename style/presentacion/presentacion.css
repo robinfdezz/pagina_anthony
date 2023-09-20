@@ -24,8 +24,9 @@
 }
 
 .presentacion_titulo span {
+    font-family: 'Ubuntu';
     font-size: 3.4rem;
-    font-weight: bold;
+    font-weight: 700;
     color: #1D90DF;
 }
 

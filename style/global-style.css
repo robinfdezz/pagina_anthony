@@ -23,3 +23,34 @@ body {
     background-color: #1981c6;
     border-radius: 4px;
 }
+
+
+
+/*? CSS TEMPORAL */
+.en_construccion{
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.en_construccion img{
+    width: 80%;
+}
+
+.en_construccion p{
+    margin-top: 50px;
+    font-family: 'Ubuntu';
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1981c6;
+}
+
+@media screen and (min-width: 1025px) {
+    .en_construccion img{
+        width: 40%;
+    }
+}

@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .viajes_titulo {
@@ -181,6 +182,20 @@
     display: none;
 }
 
+.viajes_saber-mas{
+    background-color: #ffffff;
+    color: #0091E3;
+    font-family: 'Raleway';
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    box-shadow: 2px 2px 6px #00000025;
+    margin: 50px 0 90px 0;
+}
+
+.viajes_saber-mas:hover{
+text-decoration: underline;
+}
+
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     .viajes_titulo {
         font-size: 2.8rem;
@@ -283,7 +298,7 @@
 
     .informacion_descripcion {
         padding: 0 10px 30px 20px;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .contenedor_ilustracion {
@@ -313,6 +328,16 @@
     .ilustracion-sombra-2{
         width: 150px;
         animation: sombra 13s infinite;
+}
+
+.ilustracion-3 {
+    animation: FiguraFlotante 8s infinite;
+    width: 300px;
+}
+
+.ilustracion-sombra-3{
+    width: 150px;
+    animation: sombra 8s infinite;
 }
 
     /*! PARA EL CARRUSEL */

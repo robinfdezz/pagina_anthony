@@ -1,0 +1,259 @@
+.container_testimonios{
+    width: 100%;
+    height: auto;
+    background-image: url('../../recursos/fotos/vector-lineas-4.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.contenedor_texto-testimonios{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto_testimonio-titulo{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.texto_testimonio-titulo img{
+    position: absolute;
+    width: 340px;
+    opacity: 0.1;
+    top: -50%;
+    left: -11%;
+    z-index: -1;
+}
+
+.texto_testimonio-titulo p{
+    position: relative;
+    font-family: 'Ubuntu';
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: inline-block;
+    color: #1D90DF;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #1D90DF;
+    padding-bottom: 10px;
+}
+
+.texto_testimonio-titulo h2{
+    font-family: 'Raleway';
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: rgb(58, 58, 58);
+}
+
+.texto_testimonio-titulo span{
+    font-family: 'Ubuntu';
+    font-size: 3rem;
+    color: #1D90DF;
+}
+
+.texto_testimonio-descripcion{
+    margin-bottom: 25px;
+}
+
+.texto_testimonio-descripcion p{
+    font-family: 'Raleway';
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: rgb(58, 58, 58);
+}
+
+.contenedor_cartas-testimonios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.carta-testimonios{
+    width: 100%;
+    max-width: 500px;
+    min-height: 200px;
+    border-top: 5px solid #1D90DF;
+    
+    background-color: rgb(255, 255, 255);
+    margin: 0 0 40px 0;
+    box-shadow: 3px 3px 7px #0000001f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonio_texto{
+    font-style: italic;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: 'Raleway';
+    color: rgb(58, 58, 58);
+}
+
+.testimonio_persona{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.testimonio_perfil{
+    display: flex;
+}
+
+.testimonio_perfil img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimonio_perfil div{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Raleway';
+    font-size: 0.8rem;
+    color: rgb(58, 58, 58);
+}
+
+.testimonio_persona div p:first-child{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.testimonio_persona-comillas{
+    width: 40px;
+    height: 40px;
+}
+
+.testimonio_perfil .p-2{
+    border-radius: 0;
+    width: 20px;
+    height: 20px;
+}
+
+/*! Para hacerlo responsive */
+/* Estilos para tablet (de 601px a 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .container_testimonios{
+        padding-top: 120px;
+    }
+
+    .contenedor_texto-testimonios{
+        flex-direction: row;
+        margin-bottom: 30px
+    }
+
+    .texto_testimonio-titulo{
+        width: 50%;
+    }
+
+.texto_testimonio-titulo img{
+    width: 500px;
+    top: -60%;
+    left: -21%;
+}
+
+.texto_testimonio-titulo p{
+    font-size: 2rem;
+}
+
+.texto_testimonio-titulo h2{
+    font-size: 2rem;
+}
+
+.texto_testimonio-titulo span{
+    font-family: 'Ubuntu';
+    font-size: 3.4rem;
+}
+
+.texto_testimonio-descripcion{
+    margin-bottom: 0px;
+    width: 50%;
+}
+
+.contenedor_cartas-testimonios{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.carta-testimonios{
+    width: 45%;
+    max-width: 500px;
+    min-height: 200px;
+    margin: 0 0 20px 0;
+}
+}
+
+/* Estilos para PC (a partir de 1025px) */
+@media screen and (min-width: 1025px) {
+    .container_testimonios{
+        padding-top: 200px;
+    }
+
+    .contenedor_texto-testimonios{
+        flex-direction: row;
+        margin-bottom: 40px
+    }
+
+    .texto_testimonio-titulo{
+        width: 50%;
+    }
+
+.texto_testimonio-titulo img{
+    width: 700px;
+    top: -100%;
+    left: -11%;
+}
+
+.texto_testimonio-titulo p{
+    font-size: 2rem;
+}
+
+.texto_testimonio-titulo h2{
+    font-size: 3rem;
+}
+
+.texto_testimonio-titulo span{
+    font-family: 'Ubuntu';
+    font-size: 4rem;
+}
+
+
+.texto_testimonio-descripcion{
+    margin-bottom: 0px;
+    justify-content: center;
+    width: 50%;
+}
+
+.texto_testimonio-descripcion p{
+    font-size: 1.5rem;
+    padding: 0 50px;
+}
+
+.contenedor_cartas-testimonios{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.carta-testimonios{
+    width: 45%;
+    max-width: 500px;
+    min-height: 200px;
+    margin: 0 0 20px 0;
+}
+}
