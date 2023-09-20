@@ -147,8 +147,8 @@ function initializeCarousel(sliderClass, intervalDuration) {
     return { startInterval, stopInterval };
 }
 
-// Inicializar el primer carrusel con la clase "slider1" y un intervalo de 5000 ms
+// Inicializar el primer carrusel con la clase "slider1"
 const carousel1 = initializeCarousel('slider1', 5000);
 
-// Inicializar el segundo carrusel con la clase "slider2" y un intervalo de 3000 ms
+// Inicializar el segundo carrusel con la clase "slider2"
 const carousel2 = initializeCarousel('slider2', 7000);
