@@ -1,6 +1,6 @@
 .presentacion_contenedor {
     display: flex;
-    height: calc((100vh) - (80px));
+    height: calc((105vh) - (80px));
     min-height: 700px;
     flex-direction: column;
     background-image: url('../../recursos/fotos/vector-lineas-3.png');
