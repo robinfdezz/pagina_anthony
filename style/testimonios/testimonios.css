@@ -82,13 +82,16 @@
     max-width: 500px;
     min-height: 200px;
     border-top: 5px solid #1D90DF;
-    
     background-color: rgb(255, 255, 255);
     margin: 0 0 40px 0;
     box-shadow: 3px 3px 7px #0000001f;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+opacity: 0; /* Elementos inicialmente invisibles */
+    transform: translateY(30px); /* Elementos inicialmente 30px hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .testimonio_texto{
@@ -256,4 +259,21 @@
     min-height: 200px;
     margin: 0 0 20px 0;
 }
+}
+
+@keyframes show{
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+
+.aparecer {
+    opacity: 1; /* Hacer que los elementos sean visibles */
+    transform: translateY(0); /* Mover los elementos a su posición original */
 }
