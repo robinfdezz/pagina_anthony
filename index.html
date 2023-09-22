@@ -24,15 +24,12 @@
     <link href="./style/viajes/viajes.css" rel="stylesheet" />
     <link href="./style/boton_arriba/boton_arriba.css"rel="stylesheet" />
     <link href="./style/testimonios/testimonios.css"rel="stylesheet" />
+    <link rel="stylesheet" href="./style/comentarios/comentarios.css">
 
 
 </head>
 
 <body>
-    <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v18.0" nonce="06iQrl06"></script>
-
-
     <!--? BOTON VOLVER ARRIBA -->
     <div class="boton_flotante">
         <div class="contenedor_arriba">
@@ -60,9 +57,10 @@
         </header>
         <nav class="menu_opciones">
             <ul class="menu_opciones--links">
-                <li class="menu_opciones--linkOpcion"><a href="./index.html">Inicio</a></li>
-                <li class="menu_opciones--linkOpcion"><a href="#viajes">Excursiones</a></li>
-                <li class="menu_opciones--linkOpcion"><a href="#reseñas">Reseñas</a></li>
+                <li class="menu_opciones--linkOpcion"><a href="./index.html"><img src="./recursos/iconos/inicio.png" alt="Inoco menú"><p>Inicio</p></a></li>
+                <li class="menu_opciones--linkOpcion"><a href="#viajes"><img src="./recursos/iconos/excursion.png" alt="Inoco menú"><p>Excursiones</p></a></li>
+                <li class="menu_opciones--linkOpcion"><a href="#reseñas"><img src="./recursos/iconos/resenhas.png" alt="Inoco menú"><p>Reseñas</p></a></li>
+                <li class="menu_opciones--linkOpcion"><a href="#comentario"><img src="./recursos/iconos/comentario.png" alt="Inoco menú"><p>Comentarios</p></a></li>
             </ul>
         </nav>
         <div class="menu_contacto">
@@ -412,10 +410,23 @@
     <!--! FIN SECCION PARA TESTIMONIOS -->
 
     <!--? SECCION NUEVA SIN NOMBRE -->
-    <SECtion id="nuevo">
-        <div class="contenedor_nuevo">
-            <div class="fb-comments" data-href="https://robinfdezz.github.io/pagina_anthony/" data-width="100%" data-numposts="5"></div>
-        </div>
+    <SECtion id="comentario">
+            <div class="contenedor_comentarios elemento">
+                <h2 class="comentario_titulo">
+                    Déjanos un <span>comentario</span>
+                </h2>
+                <div class="contenedor_comentario-ilustracion elemento">
+                    <div class="comentario_izquierdo">
+                        <img class="comentario_ilustracion" src="./recursos/fotos/comentario.png" alt="comentario ilustración">
+                        <img class="ilustracion_sombra-comentario" src="./recursos/fotos/sombra.png" alt="sombra">
+                    </div>
+                    <div class="comentario_derecho">
+                        <p class="comentario_texto">¡Lo que piensas de nosotros nos importa! Deja <span>tu comentario y comparte tus pensamientos</span> con nosotros.</p>
+                        <a href="./comentarios.php" class="comentario_link">¡Comentar!</a>
+                        <img src="./recursos/iconos/proximo.png" alt="flecha" class="comentario_flecha">
+                    </div>
+                </div>
+            </div>
     </SECtion>
     <!--! SECCION NUEVA SIN NOMBRE -->
 

@@ -1,0 +1,218 @@
+.contenedor_comentarios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    background-image: url('../../recursos/fotos/vector-lineas-6.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.comentario_titulo{
+    font-family: 'Raleway';
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+}
+
+.comentario_titulo span{
+    font-family: 'Ubuntu';
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: #1D90DF;
+}
+
+.contenedor_comentario-ilustracion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0; /* Elementos inicialmente invisibles */
+    transform: translateY(30px); /* Elementos inicialmente 30px hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.comentario_izquierdo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comentario_ilustracion{
+    animation: Flotando 10s infinite;
+    width: 400px;
+    -webkit-animation: Flotando 10s infinite;
+}
+
+.ilustracion_sombra-comentario {
+    width: 130px;
+    animation: sombra 8s infinite;
+}
+
+.comentario_derecho{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.comentario_texto {
+    margin-top: 10px;
+    font-family: 'Raleway';
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(58, 58, 58);
+}
+
+.comentario_texto span{
+    color: #1D90DF;
+    font-weight: bold;
+}
+.comentario_link {
+    padding: 15px;
+    margin-top: 20px;
+    font-family: 'Raleway';
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    background-color: #1D90DF;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 2px 3px 7px #00000027;
+}
+
+
+.comentario_flecha{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 40px;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: 0.2s ease;
+}
+
+.comentario_link:hover{
+    background-color: #0e78be;
+    box-shadow: 2px 3px 7px #0000003f;
+    transition: 0.3s ease;
+}
+
+.comentario_link:hover + .comentario_flecha{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.aparecer {
+    opacity: 1; /* Hacer que los elementos sean visibles */
+    transform: translateY(0); /* Mover los elementos a su posición original */
+}
+
+/*PARA RESPONSIVO*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .contenedor_comentarios{
+        padding-bottom: 50px;
+        background-image: url('../../recursos/fotos/vector-lineas-7.svg');
+    }
+    
+    .comentario_titulo{
+        font-size: 3.2rem;
+        margin-bottom: 30px
+    }
+    
+    .comentario_titulo span{
+        font-size: 3.7rem;
+    }
+    
+    .contenedor_comentario-ilustracion{
+        flex-direction: row;
+    }
+    
+    .comentario_izquierdo {
+        width: 50%;
+    }
+    
+    
+    .comentario_texto {
+        width: 80%;
+        font-size: 1.6rem;
+    }
+
+    .comentario_link {
+        margin-top: 40px;
+        box-shadow: 2px 3px 7px #0000003d;
+    }
+}
+
+/* Estilos para PC (a partir de 1025px) */
+@media screen and (min-width: 1025px) {
+    .contenedor_comentarios{
+        padding-bottom: 130px;
+        background-image: url('../../recursos/fotos/vector-lineas-7.svg');
+    }
+    
+    .comentario_titulo{
+        font-size: 3.4rem;
+        margin-bottom: 50px
+    }
+    
+    .comentario_titulo span{
+        font-size: 3.9rem;
+    }
+    
+    .contenedor_comentario-ilustracion{
+        flex-direction: row;
+    }
+
+    .comentario_ilustracion{
+        width: 500px;
+    }
+    
+    .ilustracion_sombra-comentario {
+        width: 180px;
+}
+    
+    .comentario_izquierdo {
+        width: 40%;
+    }
+    
+    .comentario_derecho {
+        width: 40%;
+    }
+    
+    .comentario_texto {
+        width: 80%;
+        font-size: 2rem;
+    }
+    
+    .comentario_link {
+        margin-top: 40px;
+        font-size: 1.7rem;
+        box-shadow: 2px 3px 7px #0000003d;
+    }
+}
+
+
+
+
+@keyframes Flotando {
+
+    0%,
+    100% {
+        transform: scale(1) translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: scale(1.04) translateY(-20px);
+}
+}
+

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DCT Excursiones</title>
+    <title>DCT Comentarios</title>
     <!--? Icono de la pagina web -->
     <link rel="icon" href="./recursos/iconos/icono-web.ico" type="image/x-icon">
     <!--? Fuente de letras -->
@@ -53,7 +53,7 @@
         </header>
         <nav class="menu_opciones">
             <ul class="menu_opciones--links">
-                <li class="menu_opciones--linkOpcion"><a href="./index.html"><img src="./recursos/iconos/inicio.png" alt="Inoco menú"><p>Inicio</p></a></li>
+                <li class="menu_opciones--linkOpcion"><a href="./index.html">Inicio</a></li>
             </ul>
         </nav>
         <div class="menu_contacto">
