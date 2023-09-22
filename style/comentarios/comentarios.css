@@ -161,6 +161,7 @@
     .contenedor_comentarios{
         padding-bottom: 130px;
         background-image: url('../../recursos/fotos/vector-lineas-7.svg');
+        background-size: 105%;
     }
     
     .comentario_titulo{
