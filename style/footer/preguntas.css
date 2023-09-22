@@ -34,6 +34,7 @@
 
 .footer_icono {
     width: 25px;
+    transition: 0.1s ease;
 }
 
 .respuesta_pregunta {
@@ -41,17 +42,20 @@
     margin: 5px 0 10px 0;
     font-family: 'Raleway';
     display: none;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
 }
 
 /*? Clases para cambio con javascript */
 .footer_icono--activo {
+    transition: 0.1s ease;
     transform: rotate(90deg);
     opacity: 1;
 }
 
 .respuesta_pregunta--activo {
-    display: flex;
-    opacity: 0.9;
+    display: block;
+    max-height: 1000px;
 }
 
 /*! Para hacerlo responsive */
