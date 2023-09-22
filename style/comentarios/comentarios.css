@@ -47,13 +47,15 @@
 
 .comentario_ilustracion{
     animation: Flotando 10s infinite;
-    width: 400px;
+    margin: 0;
+    padding: 0;
+    width: 300px;
     -webkit-animation: Flotando 10s infinite;
 }
 
 .ilustracion_sombra-comentario {
-    width: 130px;
-    animation: sombra 8s infinite;
+    width: 100px;
+    animation: sombra 10s infinite;
 }
 
 .comentario_derecho{
