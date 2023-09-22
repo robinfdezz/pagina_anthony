@@ -1,8 +1,4 @@
 .boton_flotante{
-    display: none;
-}
-
-.boton_arriba {
     display: flex;
     width: 45px;
     height: 45px;
@@ -10,6 +6,19 @@
     bottom: 15px;
     right: 15px;
     z-index: 50;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+}
+
+.boton_arriba {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .contenedor_arriba {

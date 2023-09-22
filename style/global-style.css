@@ -9,6 +9,7 @@ body {
     background-color: #F5F5F5;
     font-family: 'Raleway';
     font-size: 18px;
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
