@@ -1,3 +1,4 @@
+
 .contenedor_comentarios{
     width: 100%;
     display: flex;
@@ -51,7 +52,6 @@
     padding: 0;
     width: 300px;
     max-width: 90%;
-    -webkit-animation: Flotando 10s infinite;
 }
 
 .ilustracion_sombra-comentario {
@@ -70,7 +70,7 @@
 .comentario_texto {
     margin-top: 10px;
     font-family: 'Raleway';
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
     color: rgb(58, 58, 58);
 }
@@ -91,6 +91,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    border: none;
     box-shadow: 2px 3px 7px #00000027;
 }
 
@@ -111,13 +112,52 @@
 }
 
 .comentario_link:hover + .comentario_flecha{
-    transform: translateX(0px);
+    transform: translateX(0px)  rotate(90deg);
     opacity: 1;
 }
 
+.comentario_formulario{
+    display: none;
+}
+
+
+.comentario_formulario-activado{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comentario_redes-sociales{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comentario_redes-sociales p{
+    font-family: 'Raleway';
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(58, 58, 58);
+    margin-bottom: 20px;
+}
+
+.comentario_redes-sociales span{
+    font-size: 1.7rem;
+    color: #0091E3;
+    font-weight: 700;
+}
+
+.comentario_redes-sociales img{
+    width: 30px;
+    animation: Flotando 7s infinite;
+}
+
 .aparecer {
-    opacity: 1; /* Hacer que los elementos sean visibles */
-    transform: translateY(0); /* Mover los elementos a su posición original */
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /*PARA RESPONSIVO*/
@@ -153,6 +193,18 @@
     .comentario_link {
         margin-top: 40px;
         box-shadow: 2px 3px 7px #0000003d;
+    }
+
+    .comentario_redes-sociales{
+        width: 60%;
+    }
+    
+    .comentario_redes-sociales p{
+        margin-bottom: 40px;
+    }
+    
+    .comentario_redes-sociales img{
+        width: 50px;
     }
 }
 
@@ -203,6 +255,23 @@
         font-size: 1.7rem;
         box-shadow: 2px 3px 7px #0000003d;
     }
+
+    .comentario_redes-sociales{
+        width: 27%;
+    }
+    
+    .comentario_redes-sociales p{
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+    
+    .comentario_redes-sociales span{
+        font-size: 2rem;
+    }
+    
+    .comentario_redes-sociales img{
+        width: 50px;
+}
 }
 
 
@@ -220,3 +289,16 @@
 }
 }
 
+@keyframes sombra {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.2;
+    }
+
+    50% {
+        transform: scale(0.7);
+        opacity: 0.05;
+    }
+}

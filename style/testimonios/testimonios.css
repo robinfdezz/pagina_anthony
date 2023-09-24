@@ -88,10 +88,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    opacity: 0;
+    /*Elementosinicialmenteinvisibles*/transform: translateY(30px);
+    /*Elementosinicialmente30pxhaciaabajo*/transition: opacity 0.5s ease, transform 0.5s ease;
 
-opacity: 0; /* Elementos inicialmente invisibles */
-    transform: translateY(30px); /* Elementos inicialmente 30px hacia abajo */
-    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .testimonio_texto{

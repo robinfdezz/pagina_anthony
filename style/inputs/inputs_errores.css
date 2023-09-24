@@ -1,0 +1,60 @@
+.input-container {
+    font-weight: 200;
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.contacto_input {
+    box-sizing: border-box;
+    border-bottom: 1px solid #464646;
+    padding: 1.375rem 0.5rem 0.5rem;
+    height: 3.25rem;
+    width: 100%;
+}
+
+.contacto_input::placeholder {
+    visibility: hidden;
+    color: #ff1b1b00;
+}
+
+.contacto_input:focus {
+    outline: none;
+}
+
+.input-label {
+    position: absolute;
+    top: 2.8rem;
+    left: 0.5rem;
+    font-family: 'Raleway';
+    font-size: 1.2rem;
+    color: rgb(58, 58, 58);
+    transition: all 0.25s;
+}
+
+.contacto_input:not(:placeholder-shown)+.input-label,
+.contacto_input:focus+.input-label {
+    font-size: 0.875rem;
+    top: 2rem;
+    transition: all 0.25s;
+}
+
+.input-container--invalid .contacto_input {
+    border: 2px solid #0091E3;
+    border-radius: 7px;
+}
+
+.input-message-error {
+    display: none;
+}
+
+.input-container--invalid .input-message-error {
+    font-family: 'Raleway';
+    color: #0091E3;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}

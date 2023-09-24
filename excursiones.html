@@ -13,14 +13,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!--? Hojas de estilo para cada seccion -->
-    <link href="./style/global-style.css" rel="stylesheet" />
     <link href="./style/reset.css" rel="stylesheet" />
+    <link href="./style/global-style.css" rel="stylesheet" />
     <link href="./style/menu/menu.css" rel="stylesheet" />
     <link href="./style/footer/redes.css" rel="stylesheet" />
     <link href="./style/footer/copy.css" rel="stylesheet" />
     <link href="./style/footer/datos.css" rel="stylesheet" />
     <link href="./style/footer/preguntas.css" rel="stylesheet" />
-    <link href="./style/boton_arriba/boton_arriba.css"rel="stylesheet" />
+    <link href="./style/boton_arriba/boton_arriba.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./style/excursiones/excursiones/excursiones.css">
+    <link rel="stylesheet" href="./style/comentarios/comentarios.css">
 </head>
 
 <body>
@@ -28,21 +31,21 @@
     <!--? BOTON VOLVER ARRIBA -->
     <div class="boton_flotante">
         <div class="contenedor_arriba">
-            <a href="#inicio_menu"  class="boton_imagen" id="boton_img">
-            <img src="./recursos/iconos/flecha.png" alt="flecha arriba">
+            <a href="#inicio_menu" class="boton_imagen" id="boton_img">
+                <img src="./recursos/iconos/flecha.png" alt="flecha arriba">
             </a>
             <div class="div_fondo"></div>
         </div>
     </div>
     <!--! FIN BOTON VOLVER ARRIBA -->
 
-    
+
     <!--? MENU NAVEGACION -->
     <section id="inicio_menu">
         <header class="menu_contenedor">
             <div class="menu_contenedor--Logo">
                 <a href="./index.html">
-                <img src="./recursos/fotos/DCT-Logo-PNG-2.png" class="menu_imagen" />
+                    <img src="./recursos/fotos/DCT-Logo-PNG-2.png" class="menu_imagen" />
                 </a>
                 <div class="menu_contenedor--boton">
                     <span class="menu_span menu_span-1"></span>
@@ -53,25 +56,113 @@
         </header>
         <nav class="menu_opciones">
             <ul class="menu_opciones--links">
-                <li class="menu_opciones--linkOpcion"><a href="./index.html"><img src="./recursos/iconos/inicio.png" alt="Inoco menú"><p>Inicio</p></a></li>
+                <li class="menu_opciones--linkOpcion"><a href="./index.html"><img src="./recursos/iconos/inicio.png"
+                            alt="Inoco menú">
+                        <p>Inicio</p>
+                    </a></li>
             </ul>
         </nav>
         <div class="menu_contacto">
-            <a class="menu_contacto--link" href="#footer">Contáctanos</a>
+            <a class="menu_contacto--link" href="./index.html#contactanos">Contáctanos</a>
         </div>
     </section>
     <!--! FIN MENU NAVEGACION -->
 
-
-    <div class="en_construccion">
-        <div class="">
-
+    <section id="excursiones">
+        <div class="contenedor_excursiones">
+            <div class="contenedor_cabecera">
+                <h1 class="excursiones_titulo">Explora las Joyas de Nuestra Nación en <span>Nuestras Inolvidables
+                        Excursiones</span></h1>
+            </div>
         </div>
-    </div>
+        <div class="contenedor_excursiones-informacion">
+            <div class="excursion_fotos excursion_fotos-1">
+                <h2>Excursiones a <span>Playas</span></h2>
+                <div class="contenedor_fotos-excursiones elemento">
+                    <img class="fotos_excursiones-img" src="./recursos/fotos/Excursiones/Fotos_Página_Excursiones/2.webp" alt="foto excursion">
+                    <div class="overlay">
+                        <p class="fotos_excursiones-texto">Día de aventura en Playa Macao: <span>¡una jornada repleta de diversión bajo el sol!</span> Descubre las 
+                            emocionantes actividades que te esperan en este paraíso tropical, donde la diversión nunca termina.</p>
+                    </div>
+                </div>
+                <div class="contenedor_fotos-excursiones elemento">
+                    <img class="fotos_excursiones-img" src="./recursos/fotos/Excursiones/Fotos_Página_Excursiones/caballo-1.webp" alt="foto excursion">
+                    <div class="overlay">
+                        <p class="fotos_excursiones-texto">Una emocionante parada en nuestro exclusivo tour a caballo. Disfruta de las maravillas de la costa mientras consentimos tus sentidos con una experiencia inolvidable. 
+                            <span>¡Sumérgete en la belleza del mar y la arena, todo a tu ritmo!</span></p>
+                    </div>
+                </div>
+                <div class="contenedor_fotos-excursiones elemento">
+                    <img class="fotos_excursiones-img" src="./recursos/fotos/Excursiones/Fotos_Página_Excursiones/10.webp" alt="foto excursion">
+                    <div class="overlay">
+                        <p class="fotos_excursiones-texto">Parada en una casa típica donde encontrarás atracciones como una acogedora cafetería artesanal, 
+                            una variedad de tabacos exquisitos y mucho más. <span>¡Ven y descubre todo lo que tenemos para ofrecerte!</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="excursion_fotos excursion_fotos-2">
+                <h2>Excursiones a <span>Caballo</span></h2>
+                <div class="contenedor_fotos-excursiones elemento">
+                    <img class="fotos_excursiones-img" src="./recursos/fotos/Excursiones/Fotos_Página_Excursiones/caballo-2.webp" alt="foto excursion">
+                    <div class="overlay">
+                        <p class="fotos_excursiones-texto"><span>¡Disfruta de un emocionante día de aventura con nuestro Tour de los Cabellos!</span></p>
+                    </div>
+                </div>
+                <div class="contenedor_fotos-excursiones elemento">
+                    <img class="fotos_excursiones-img" src="./recursos/fotos/Excursiones/Fotos_Página_Excursiones/caballo-8.webp" alt="foto excursion">
+                    <div class="overlay">
+                        <p class="fotos_excursiones-texto"><span>¡Disfruta de un emocionante día de aventura con nuestro Tour de los Cabellos!</span></p>
+                    </div>
+                </div>
+                <div class="contenedor_fotos-excursiones elemento">
+                    <img class="fotos_excursiones-img" src="./recursos/fotos/Excursiones/Fotos_Página_Excursiones/caballo-6.webp" alt="foto excursion">
+                    <div class="overlay">
+                        <p class="fotos_excursiones-texto"><span>Explora playas paradisíacas, 
+                            visita encantadores pueblos costeros y conoce a los lugareños amigables.</span> Además, emocionantes actividades como kayak en grutas secretas, 
+                            senderismo en colinas con vistas panorámicas y una visita a una reserva natural te esperan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="excursion_fotos excursion_fotos-3">
+                <h2>Excursiones en <span>Buggys y más</span></h2>
+                <div class="contenedor_fotos-excursiones elemento">
+                    <img class="fotos_excursiones-img" src="./recursos/fotos/Excursiones/Fotos_Página_Excursiones/buggy-4.webp" alt="foto excursion">
+                    <div class="overlay">
+                        <p class="fotos_excursiones-texto">El emocionante tour de buggys te llevará a través de una serie de paradas fascinantes, 
+                            donde experimentarás la diversión a bordo de potentes buggys, cuatrimotos y mucho más. <span>¡Prepárate para una experiencia inolvidable!</span></p>
+                    </div>
+                </div>
+                <div class="contenedor_fotos-excursiones elemento">
+                    <img class="fotos_excursiones-img" src="./recursos/fotos/Excursiones/Fotos_Página_Excursiones/1.webp" alt="foto excursion">
+                    <div class="overlay">
+                        <p class="fotos_excursiones-texto">La Cueva Taina, ubicada a 25 pies bajo la superficie, te sumerge en un mundo 
+                            de aguas cristalinas y paisajes subacuáticos impresionantes. Esta maravilla natural cautiva con su 
+                            belleza única. <span>Sumérgete en un paraíso acuático donde la magia de la naturaleza te dejará sin 
+                            palabras.</span></p>
+                    </div>
+                </div>
+                <div class="contenedor_fotos-excursiones elemento">
+                    <img class="fotos_excursiones-img" src="./recursos/fotos/Excursiones/Fotos_Página_Excursiones/9.webp" alt="foto excursion">
+                    <div class="overlay">
+                        <p class="fotos_excursiones-texto">La Cueva Taina, ubicada a 25 pies bajo la superficie, te sumerge en un mundo 
+                            de aguas cristalinas y paisajes subacuáticos impresionantes. Esta maravilla natural cautiva con su 
+                            belleza única. <span>Sumérgete en un paraíso acuático donde la magia de la naturaleza te dejará sin 
+                            palabras.</span></p>
+                    </div>
+                </div>
+                <div class="contenedor_fotos-excursiones elemento">
+                    <img class="fotos_excursiones-img" src="./recursos/fotos/Excursiones/Fotos_Página_Excursiones/3.webp" alt="foto excursion">
+                    <div class="overlay">
+                        <p class="fotos_excursiones-texto">La Cueva Taina, ubicada a 25 pies bajo la superficie, te sumerge en un mundo 
+                            de aguas cristalinas y paisajes subacuáticos impresionantes. Esta maravilla natural cautiva con su 
+                            belleza única. <span>Sumérgete en un paraíso acuático donde la magia de la naturaleza te dejará sin 
+                            palabras.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-    
     <!--? PIE DE PAGINA O FOOTER -->
     <section id="footer">
         <div class="footer_contenedor">
@@ -85,10 +176,10 @@
                             <img class="footer_icono footer_icono-1" src="./recursos/iconos/flecha.png" />
                         </div>
                         <div class="respuesta_pregunta-1 respuesta_pregunta">
-                            <p>Nuestras excursiones más populares incluyen visitas a la Isla Saona, 
-                                recorridos en buggys emocionantes, paseos a caballo a través de 
-                                paisajes impresionantes y días de relax en Playa Macao. Estas son 
-                                solo algunas de las emocionantes experiencias que ofrecemos para 
+                            <p>Nuestras excursiones más populares incluyen visitas a la Isla Saona,
+                                recorridos en buggys emocionantes, paseos a caballo a través de
+                                paisajes impresionantes y días de relax en Playa Macao. Estas son
+                                solo algunas de las emocionantes experiencias que ofrecemos para
                                 que descubras lo mejor de la República Dominicana.</p>
                         </div>
                     </div>
@@ -99,27 +190,28 @@
                             <img class="footer_icono footer_icono-2" src="./recursos/iconos/flecha.png" />
                         </div>
                         <div class="respuesta_pregunta-2 respuesta_pregunta">
-                            <p>La duración de nuestras excursiones varía según la actividad. Por ejemplo, 
-                                nuestros paseos en buggy suelen durar alrededor de 3-4 horas, mientras 
-                                que las excursiones a la Isla Saona pueden llevar un día completo. Te 
-                                recomendamos verificar la duración específica de cada actividad en la 
+                            <p>La duración de nuestras excursiones varía según la actividad. Por ejemplo,
+                                nuestros paseos en buggy suelen durar alrededor de 3-4 horas, mientras
+                                que las excursiones a la Isla Saona pueden llevar un día completo. Te
+                                recomendamos verificar la duración específica de cada actividad en la
                                 descripción detallada de cada tour contactando con nosotros.</p>
                         </div>
                     </div>
 
                     <div class="footer_pregunta-3 footer_preguntas--contenedor">
                         <div class="titulo_pregunta titulo_pregunta-3">
-                            <p class="footer_cuestion">¿Qué medidas de seguridad implementan durante las excursiones?</p>
+                            <p class="footer_cuestion">¿Qué medidas de seguridad implementan durante las excursiones?
+                            </p>
                             <img class="footer_icono footer_icono-3" src="./recursos/iconos/flecha.png" />
                         </div>
                         <div class="respuesta_pregunta-3 respuesta_pregunta">
-                            <p>La seguridad de nuestros clientes es nuestra máxima prioridad. Nuestros 
-                                guías altamente capacitados y experimentados se aseguran de que todas las 
-                                actividades se realicen de manera segura. Proporcionamos equipo de 
-                                protección cuando sea necesario, como cascos en los paseos en buggy, 
-                                y seguimos estrictas pautas de seguridad en cada actividad. Además, 
-                                nuestras excursiones son adecuadas para todas las edades y niveles 
-                                de experiencia, y siempre estamos disponibles para responder a cualquier 
+                            <p>La seguridad de nuestros clientes es nuestra máxima prioridad. Nuestros
+                                guías altamente capacitados y experimentados se aseguran de que todas las
+                                actividades se realicen de manera segura. Proporcionamos equipo de
+                                protección cuando sea necesario, como cascos en los paseos en buggy,
+                                y seguimos estrictas pautas de seguridad en cada actividad. Además,
+                                nuestras excursiones son adecuadas para todas las edades y niveles
+                                de experiencia, y siempre estamos disponibles para responder a cualquier
                                 pregunta o preocupación relacionada con la seguridad que puedas tener.</p>
                         </div>
                     </div>
@@ -137,7 +229,8 @@
                                 target="_blank"><img src="./recursos/iconos/telefono.png" alt="teléfonos">
                                 <p><span>2</span>+1(809) 907-7529</p>
                             </a></li>
-                        <li><a href="https://maps.app.goo.gl/PzZ9otQuGDmVq4af7" target="_blank"><img src="./recursos/iconos/ubicacion.png" alt="ubicación">
+                        <li><a href="https://maps.app.goo.gl/PzZ9otQuGDmVq4af7" target="_blank"><img
+                                    src="./recursos/iconos/ubicacion.png" alt="ubicación">
                                 <p>Punta Cana</p>
                             </a></li>
                     </ul>
@@ -147,11 +240,13 @@
             <div class="footer_redes-sociales">
                 <hr class="redes_linea-decorativa">
                 <ul>
-                    <li class="redes_icono"><a class="redes_icono-link" href="https://www.facebook.com/profile.php?id=61551477692491"
-                            target="_blank"><img src="./recursos/iconos/facebook.png" /></a></li>
+                    <li class="redes_icono"><a class="redes_icono-link"
+                            href="https://www.facebook.com/profile.php?id=61551477692491" target="_blank"><img
+                                src="./recursos/iconos/facebook.png" /></a></li>
                     <li class="redes_icono"><a class="redes_icono-link" href="https://instagram.com/dreamycontrytourdr"
                             target="_blank"><img src="./recursos/iconos/instagram.png" /></a></li>
-                    <li class="redes_icono"><a class="redes_icono-link" href="https://wa.me/18299804873?text=¡Hola! Vengo desde la página web :)"
+                    <li class="redes_icono"><a class="redes_icono-link"
+                            href="https://wa.me/18299804873?text=¡Hola! Vengo desde la página web :)"
                             target="_blank"><img src="./recursos/iconos/whatsapp.png" /></a></li>
                     <!-- <li class="redes_icono"><a class="redes_icono-link" href="https://instagram.com/dreamycontrytourdr"
                             target="_blank"><img src="./recursos/iconos/tik-tok.png" /></a></li> -->
@@ -168,8 +263,10 @@
     <!--! FIN PIE DE PAGINA FOOTER -->
 
     <!--? ARCHIVOS JS PARA FUNCIONALIDADES-->
+    <script src="./scripts/scroll_aparicion.js"></script>
     <script src="./scripts/navegacion.js"></script>
     <script src="./scripts/boton_arriba.js"></script>
     <script src="./scripts/preguntasFrecuentes.js"></script>
 </body>
+
 </html>

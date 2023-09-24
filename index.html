@@ -10,8 +10,7 @@
     <!--? Fuente de letras -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!--? Hojas de estilo para cada seccion -->
     <link href="./style/global-style.css" rel="stylesheet" />
     <link href="./style/reset.css" rel="stylesheet" />
@@ -22,19 +21,20 @@
     <link href="./style/footer/preguntas.css" rel="stylesheet" />
     <link href="./style/presentacion/presentacion.css" rel="stylesheet" />
     <link href="./style/viajes/viajes.css" rel="stylesheet" />
-    <link href="./style/boton_arriba/boton_arriba.css"rel="stylesheet" />
-    <link href="./style/testimonios/testimonios.css"rel="stylesheet" />
+    <link href="./style/boton_arriba/boton_arriba.css" rel="stylesheet" />
+    <link href="./style/testimonios/testimonios.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style/comentarios/comentarios.css">
 
-
+    <link href="./style/contacto/contacto.css" rel="stylesheet" />
+    <link href="./style/inputs/inputs_errores.css" rel="stylesheet" />
 </head>
 
 <body>
     <!--? BOTON VOLVER ARRIBA -->
     <div class="boton_flotante">
         <div class="contenedor_arriba">
-            <a href="#inicio_menu"  class="boton_imagen" id="boton_img">
-            <img src="./recursos/iconos/flecha.png" alt="flecha arriba">
+            <a href="#inicio_menu" class="boton_imagen" id="boton_img">
+                <img src="./recursos/iconos/flecha.png" alt="flecha arriba">
             </a>
             <div class="div_fondo"></div>
         </div>
@@ -46,7 +46,7 @@
         <header class="menu_contenedor">
             <div class="menu_contenedor--Logo">
                 <a href="./index.html">
-                <img src="./recursos/fotos/DCT-Logo-PNG-2.png" class="menu_imagen" />
+                    <img src="./recursos/fotos/DCT-Logo-PNG-2.png" class="menu_imagen" />
                 </a>
                 <div class="menu_contenedor--boton">
                     <span class="menu_span menu_span-1"></span>
@@ -57,14 +57,22 @@
         </header>
         <nav class="menu_opciones">
             <ul class="menu_opciones--links">
-                <li class="menu_opciones--linkOpcion"><a href="./index.html"><img src="./recursos/iconos/inicio.png" alt="Inoco menú"><p>Inicio</p></a></li>
-                <li class="menu_opciones--linkOpcion"><a href="#viajes"><img src="./recursos/iconos/excursion.png" alt="Inoco menú"><p>Excursiones</p></a></li>
-                <li class="menu_opciones--linkOpcion"><a href="#reseñas"><img src="./recursos/iconos/resenhas.png" alt="Inoco menú"><p>Reseñas</p></a></li>
-                <li class="menu_opciones--linkOpcion"><a href="#comentario"><img src="./recursos/iconos/comentario.png" alt="Inoco menú"><p>Comentarios</p></a></li>
+                <li class="menu_opciones--linkOpcion"><a href="./index.html"><img src="./recursos/iconos/inicio.png"
+                            alt="Inoco menú">
+                        <p>Inicio</p>
+                    </a></li>
+                <li class="menu_opciones--linkOpcion"><a href="#viajes"><img src="./recursos/iconos/excursion.png"
+                            alt="Inoco menú">
+                        <p>Excursiones</p>
+                    </a></li>
+                <li class="menu_opciones--linkOpcion"><a href="#reseñas"><img src="./recursos/iconos/resenhas.png"
+                            alt="Inoco menú">
+                        <p>Reseñas</p>
+                    </a></li>
             </ul>
         </nav>
         <div class="menu_contacto">
-            <a class="menu_contacto--link" href="#footer">Contáctanos</a>
+            <a class="menu_contacto--link" href="#contactanos">Contáctanos</a>
         </div>
     </section>
     <!--! FIN MENU NAVEGACION -->
@@ -74,11 +82,11 @@
         <div class="presentacion_contenedor">
             <div class="presentacion_contenedor--izquierdo">
                 <h1 class="presentacion_titulo">Agencia de viajes <span>Dream Country Tour</span></h1>
-                <h2 class="presentacion_descripcion">Descubre el Paraíso Dominicano con nosotros. Somos una 
+                <h2 class="presentacion_descripcion">Descubre el Paraíso Dominicano con nosotros. Somos una
                     agencia de viajes urbanos y paseos turísticos, tu Puerta a las Mejores Aventuras en el País.</h2>
-                    <div class="presentacion_contacto">
-                        <a class="presentacion--link" href="#footer">Contáctanos</a>
-                    </div>
+                <div class="presentacion_contacto">
+                    <a class="presentacion--link" href="#footer">Contáctanos</a>
+                </div>
             </div>
             <div class="presentacion_contenedor--derecho">
                 <img src="./recursos/fotos/DCT-Logo-PNG-min.png" alt="representacion">
@@ -87,7 +95,7 @@
     </section>
     <!--! FIN SECCION PRESENTACION -->
 
-    
+
 
 
 
@@ -98,147 +106,154 @@
             <h2 class="viajes_titulo">¡Nuestras Excursiones!</h2>
 
             <div class="contenedor_carta  contenedor_excursion--buggys elemento">
-            <div class="cartas_excursiones">
-                <div class="foto_excursion">
+                <div class="cartas_excursiones">
+                    <div class="foto_excursion">
 
-                    <div class="slider slider1">
-                        <div class="list">
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/buggys/buggy-1.webp" alt="">
+                        <div class="slider slider1">
+                            <div class="list">
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/buggys/buggy-1.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/buggys/buggy-2.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/buggys/buggy-3.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/buggys/buggy-4.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/buggys/buggy-5.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/buggys/buggy-6.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/buggys/buggy-7.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/buggys/buggy-8.webp" alt="">
+                                </div>
                             </div>
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/buggys/buggy-2.webp" alt="">
+                            <div class="buttons">
+                                <button class="prev"><img src="./recursos/iconos/izquierda-flecha.png"
+                                        alt="flecha"></button>
+                                <button class="next"><img src="./recursos/iconos/derecha-flecha.png"
+                                        alt="flecha"></button>
                             </div>
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/buggys/buggy-3.webp" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/buggys/buggy-4.webp" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/buggys/buggy-5.webp" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/buggys/buggy-6.webp" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/buggys/buggy-7.webp" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/buggys/buggy-8.webp" alt="">
-                            </div>
+                            <ul class="dots">
+                                <li class="active"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
                         </div>
-                        <div class="buttons">
-                            <button class="prev"><img src="./recursos/iconos/izquierda-flecha.png" alt="flecha"></button>
-                            <button class="next"><img src="./recursos/iconos/derecha-flecha.png" alt="flecha"></button>
+
+                    </div>
+                    <div class="informacion_excursion">
+                        <h3 class="informacion_titulo">El Tour De Los Buggys</h3>
+                        <div class="informacion_iconos">
+                            <img src="./recursos/iconos/carro-buggy.png" alt="icono">
+                            <img src="./recursos/iconos/moto-buggy.png" alt="icono">
+                            <img src="./recursos/iconos/excursionismo-buggy.png" alt="icono">
                         </div>
-                        <ul class="dots">
-                            <li class="active"></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                        <p class="informacion_descripcion">Una experiencia inolvidable llena de
+                            diversión que dura aproximadamente de <span>2:00/3:00 horas</span>, e incluso el día
+                            completo. Durante el tour,
+                            visitarás lugares fascinantes como <span>Playa Macao, la Cueva Taina, una Casa Típica y
+                                más.</span>
+                        </p>
                     </div>
-
                 </div>
-                <div class="informacion_excursion">
-                    <h3 class="informacion_titulo">El Tour De Los Buggys</h3>
-                    <div class="informacion_iconos">
-                        <img src="./recursos/iconos/carro-buggy.png" alt="icono">
-                        <img src="./recursos/iconos/moto-buggy.png" alt="icono">
-                        <img src="./recursos/iconos/excursionismo-buggy.png" alt="icono">
-                    </div>
-                    <p class="informacion_descripcion">Una experiencia inolvidable llena de 
-                        diversión que dura aproximadamente de <span>2:00/3:00 horas</span>, e incluso el día completo. Durante el tour, 
-                        visitarás lugares fascinantes como <span>Playa Macao, la Cueva Taina, una Casa Típica y más.</span>
-                    </p>
-                </div>
-            </div>
 
-            <div class="contenedor_ilustracion contenedor_ilustracion--1">
-                <img class="ilustracion-1" src="./recursos/fotos/excursion-ilustracion.png" alt="ilustracion">
-                <img class="ilustracion-sombra-1" src="./recursos/fotos/sombra.png" alt="sombra">
-            </div>
+                <div class="contenedor_ilustracion contenedor_ilustracion--1">
+                    <img class="ilustracion-1" src="./recursos/fotos/excursion-ilustracion.png" alt="ilustracion">
+                    <img class="ilustracion-sombra-1" src="./recursos/fotos/sombra.png" alt="sombra">
+                </div>
             </div>
 
             <div class="contenedor_carta contenedor_excursion--caballos elemento">
-            <div class="cartas_excursiones elemento">
-                <div class="foto_excursion">
+                <div class="cartas_excursiones elemento">
+                    <div class="foto_excursion">
 
-                    <div class="slider slider2">
-                        <div class="list">
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/caballos/caballo-1.webp" alt="">
+                        <div class="slider slider2">
+                            <div class="list">
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/caballos/caballo-1.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/caballos/caballo-2.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/caballos/caballo-3.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/caballos/caballo-4.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/caballos/caballo-5.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/caballos/caballo-6.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/caballos/caballo-7.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/caballos/caballo-8.webp" alt="">
+                                </div>
                             </div>
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/caballos/caballo-2.webp" alt="">
+                            <div class="buttons">
+                                <button class="prev"><img src="./recursos/iconos/izquierda-flecha.png"
+                                        alt="flecha"></button>
+                                <button class="next"><img src="./recursos/iconos/derecha-flecha.png"
+                                        alt="flecha"></button>
                             </div>
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/caballos/caballo-3.webp" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/caballos/caballo-4.webp" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/caballos/caballo-5.webp" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/caballos/caballo-6.webp" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/caballos/caballo-7.webp" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="./recursos/fotos/Excursiones/caballos/caballo-8.webp" alt="">
-                            </div>
+                            <ul class="dots">
+                                <li class="active"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
                         </div>
-                        <div class="buttons">
-                            <button class="prev"><img src="./recursos/iconos/izquierda-flecha.png" alt="flecha"></button>
-                            <button class="next"><img src="./recursos/iconos/derecha-flecha.png" alt="flecha"></button>
+
+                    </div>
+                    <div class="informacion_excursion">
+                        <h3 class="informacion_titulo">Tour De Caballos</h3>
+                        <div class="informacion_iconos">
+                            <img src="./recursos/iconos/caballo-icono.png" alt="icono">
+                            <img src="./recursos/iconos/excursion-icono.png" alt="icono">
+                            <img src="./recursos/iconos/sol-icono.png" alt="icono">
                         </div>
-                        <ul class="dots">
-                            <li class="active"></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                        <p class="informacion_descripcion">Embárcate en nuestro emocionante tour a caballo,
+                            explorando paisajes pintorescos mientras recorres diversas playas hasta llegar a
+                            la <span>desembocadura donde el río se encuentra con el mar.</span> Una experiencia
+                            inolvidable
+                            que te sumergirá en la belleza natural de la región.
+                        </p>
                     </div>
-
                 </div>
-                <div class="informacion_excursion">
-                    <h3 class="informacion_titulo">Tour De Caballos</h3>
-                    <div class="informacion_iconos">
-                        <img src="./recursos/iconos/caballo-icono.png" alt="icono">
-                        <img src="./recursos/iconos/excursion-icono.png" alt="icono">
-                        <img src="./recursos/iconos/sol-icono.png" alt="icono">
-                    </div>
-                    <p class="informacion_descripcion">Embárcate en nuestro emocionante tour a caballo, 
-                        explorando paisajes pintorescos mientras recorres diversas playas hasta llegar a 
-                        la <span>desembocadura donde el río se encuentra con el mar.</span> Una experiencia inolvidable 
-                        que te sumergirá en la belleza natural de la región.
-                    </p>
-                </div>
-            </div>
 
-            <div class="contenedor_ilustracion contenedor_ilustracion--2">
-                <img class="ilustracion-2" src="./recursos/fotos/viajes-ilustracion.png" alt="ilustracion">
-                <img class="ilustracion-sombra-2" src="./recursos/fotos/sombra.png" alt="sombra">
-            </div>
+                <div class="contenedor_ilustracion contenedor_ilustracion--2">
+                    <img class="ilustracion-2" src="./recursos/fotos/viajes-ilustracion.png" alt="ilustracion">
+                    <img class="ilustracion-sombra-2" src="./recursos/fotos/sombra.png" alt="sombra">
+                </div>
             </div>
 
 
             <div class="contenedor_carta  contenedor_excursion--buggys elemento">
                 <div class="cartas_excursiones">
                     <div class="foto_excursion">
-    
+
                         <div class="slider slider3">
                             <div class="list">
                                 <div class="item">
@@ -270,8 +285,10 @@
                                 </div>
                             </div>
                             <div class="buttons">
-                                <button class="prev"><img src="./recursos/iconos/izquierda-flecha.png" alt="flecha"></button>
-                                <button class="next"><img src="./recursos/iconos/derecha-flecha.png" alt="flecha"></button>
+                                <button class="prev"><img src="./recursos/iconos/izquierda-flecha.png"
+                                        alt="flecha"></button>
+                                <button class="next"><img src="./recursos/iconos/derecha-flecha.png"
+                                        alt="flecha"></button>
                             </div>
                             <ul class="dots">
                                 <li class="active"></li>
@@ -285,7 +302,7 @@
                                 <li></li>
                             </ul>
                         </div>
-    
+
                     </div>
                     <div class="informacion_excursion">
                         <h3 class="informacion_titulo">Playa Macao, Isla Saona y más</h3>
@@ -294,20 +311,21 @@
                             <img src="./recursos/iconos/nadando-icono.png" alt="icono">
                             <img src="./recursos/iconos/playa-icono.png" alt="icono">
                         </div>
-                        <p class="informacion_descripcion">Descubre las maravillas de nuestro país con nuestras 
-                            emocionantes excursiones que te llevarán a algunos de los destinos más exóticos, como la 
-                            impresionante <span>Playa Macao, la enigmática Cueva Taina, auténticas Casas Típicas</span> y 
+                        <p class="informacion_descripcion">Descubre las maravillas de nuestro país con
+                            emocionantes excursiones que te llevarán a los destinos más exóticos, como la
+                            impresionante <span>Playa Macao, la enigmática Cueva Taina, auténticas Casas Típicas</span>
+                            y
                             muchas otras atracciones fascinantes.
                         </p>
                     </div>
                 </div>
-    
+
                 <div class="contenedor_ilustracion contenedor_ilustracion--3">
                     <img class="ilustracion-3" src="./recursos/fotos/playa-ilustracion.png" alt="ilustracion">
                     <img class="ilustracion-sombra-3" src="./recursos/fotos/sombra.png" alt="sombra">
                 </div>
-                </div>
-                <a href="./excursiones.html" class="viajes_saber-mas">Ver más</a>
+            </div>
+            <a href="./excursiones.html" class="viajes_saber-mas">Ver más</a>
         </div>
     </section>
     <!--! FIN SECCION PARA LOS VIAJES -->
@@ -322,20 +340,21 @@
                     <h2>Lo que dicen nuestros clientes sobre asistir a <span>nuestras excursiones</span></h2>
                 </div>
                 <div class="texto_testimonio-descripcion">
-                    <p>Nuestro compromiso con la calidad y la satisfacción del cliente es evidente en 
-                        las experiencias positivas compartidas por nuestros clientes satisfechos. 
-                        A continuación presentamos testimonios recientes de nuestros valiosos clientes, 
-                        que han experimentado de primera mano el profesionalismo, la confiabilidad y la calidad de nuestras excursiones.</p>
+                    <p>Nuestro compromiso con la calidad y la satisfacción del cliente es evidente en
+                        las experiencias positivas compartidas por nuestros clientes satisfechos.
+                        A continuación presentamos testimonios recientes de nuestros valiosos clientes,
+                        que han experimentado de primera mano el profesionalismo, la confiabilidad y la calidad de
+                        nuestras excursiones.</p>
                 </div>
             </div>
             <div class="contenedor_cartas-testimonios">
 
                 <div class="carta-testimonios elemento">
-                        <p class="testimonio_texto">
-                            "Realmente disfruté de la excursión a la hermosa Playa Macao con Dream Country 
-                            Tour. La playa era impresionante y la atención al detalle por parte del equipo 
-                            fue excepcional. Fue un día inolvidable en el paraíso dominicano."
-                        </p>
+                    <p class="testimonio_texto">
+                        "Realmente disfruté de la excursión a la hermosa Playa Macao con Dream Country
+                        Tour. La playa era impresionante y la atención al detalle por parte del equipo
+                        fue excepcional. Fue un día inolvidable en el paraíso dominicano."
+                    </p>
                     <div class="testimonio_persona">
                         <div class="testimonio_perfil">
                             <img src="./recursos/fotos/personas/1.jpg" alt="foto perfil">
@@ -350,83 +369,119 @@
 
                 <div class="carta-testimonios elemento">
                     <p class="testimonio_texto">
-                        "Los recorridos en buggy con Dream Country Tour fueron emocionantes y divertidos. 
-                        Experimenté la emoción de la aventura mientras exploraba la hermosa costa 
+                        "Los recorridos en buggy con Dream Country Tour fueron emocionantes y divertidos.
+                        Experimenté la emoción de la aventura mientras exploraba la hermosa costa
                         de mi país. ¡No puedo esperar para hacerlo de nuevo!"
                     </p>
-                <div class="testimonio_persona">
-                    <div class="testimonio_perfil">
-                        <img src="./recursos/fotos/personas/2.jpg" alt="foto perfil">
-                        <div>
-                            <p class="p-1">Ana García</p>
-                            <img class="p-2" src="./recursos/iconos/republica-dominicana.png">
+                    <div class="testimonio_persona">
+                        <div class="testimonio_perfil">
+                            <img src="./recursos/fotos/personas/2.jpg" alt="foto perfil">
+                            <div>
+                                <p class="p-1">Ana García</p>
+                                <img class="p-2" src="./recursos/iconos/republica-dominicana.png">
+                            </div>
                         </div>
-                    </div>
-                    <img class="testimonio_persona-comillas" src="./recursos/iconos/comillas.png" alt="comillas">
-                </div>
-            </div>
-
-            <div class="carta-testimonios elemento">
-                <p class="testimonio_texto">
-                    "Mi viaje a la Isla Saona con Dream Country Tour fue simplemente 
-                    asombroso. La belleza natural de la isla es incomparable, y el 
-                    equipo hizo que la experiencia fuera aún más especial. Definitivamente, 
-                    recomiendo esta agencia de viajes a cualquiera que quiera explorar lo 
-                    mejor de la República Dominicana."
-                </p>
-            <div class="testimonio_persona">
-                <div class="testimonio_perfil">
-                    <img src="./recursos/fotos/personas/3.jpg" alt="foto perfil">
-                    <div>
-                        <p class="p-1">Javier Ruiz</p>
-                        <img class="p-2" src="./recursos/iconos/espana.png">
+                        <img class="testimonio_persona-comillas" src="./recursos/iconos/comillas.png" alt="comillas">
                     </div>
                 </div>
-                <img class="testimonio_persona-comillas" src="./recursos/iconos/comillas.png" alt="comillas">
-            </div>
-        </div>
 
-        <div class="carta-testimonios elemento">
-            <p class="testimonio_texto">
-                "Mi familia y yo pasamos un día increíble en la Playa El Macao, 
-                la playa era simplemente espectacular, y la atención al cliente fue 
-                excepcional. Definitivamente, hicieron que nuestras vacaciones fueran 
-                inolvidables. Gracias por una experiencia tan maravillosa."
-            </p>
-        <div class="testimonio_persona">
-            <div class="testimonio_perfil">
-                <img src="./recursos/fotos/personas/4.jpg" alt="foto perfil">
-                <div>
-                    <p class="p-1">Carlos Méndez</p>
-                    <img class="p-2" src="./recursos/iconos/republica-dominicana.png">
+                <div class="carta-testimonios elemento">
+                    <p class="testimonio_texto">
+                        "Mi viaje a la Isla Saona con Dream Country Tour fue simplemente
+                        asombroso. La belleza natural de la isla es incomparable, y el
+                        equipo hizo que la experiencia fuera aún más especial. Definitivamente,
+                        recomiendo esta agencia de viajes a cualquiera que quiera explorar lo
+                        mejor de la República Dominicana."
+                    </p>
+                    <div class="testimonio_persona">
+                        <div class="testimonio_perfil">
+                            <img src="./recursos/fotos/personas/3.jpg" alt="foto perfil">
+                            <div>
+                                <p class="p-1">Javier Ruiz</p>
+                                <img class="p-2" src="./recursos/iconos/espana.png">
+                            </div>
+                        </div>
+                        <img class="testimonio_persona-comillas" src="./recursos/iconos/comillas.png" alt="comillas">
+                    </div>
                 </div>
-            </div>
-            <img class="testimonio_persona-comillas" src="./recursos/iconos/comillas.png" alt="comillas">
-        </div>
-    </div>
+
+                <div class="carta-testimonios elemento">
+                    <p class="testimonio_texto">
+                        "Mi familia y yo pasamos un día increíble en la Playa El Macao,
+                        la playa era simplemente espectacular, y la atención al cliente fue
+                        excepcional. Definitivamente, hicieron que nuestras vacaciones fueran
+                        inolvidables. Gracias por una experiencia tan maravillosa."
+                    </p>
+                    <div class="testimonio_persona">
+                        <div class="testimonio_perfil">
+                            <img src="./recursos/fotos/personas/4.jpg" alt="foto perfil">
+                            <div>
+                                <p class="p-1">Carlos Méndez</p>
+                                <img class="p-2" src="./recursos/iconos/republica-dominicana.png">
+                            </div>
+                        </div>
+                        <img class="testimonio_persona-comillas" src="./recursos/iconos/comillas.png" alt="comillas">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!--! FIN SECCION PARA TESTIMONIOS -->
 
     <!--? SECCION COMENTARIOS -->
-    <section id="comentario">
-            <div class="contenedor_comentarios">
-                <h2 class="comentario_titulo">
-                    Déjanos un <span>comentario</span>
-                </h2>
-                <div class="contenedor_comentario-ilustracion elemento">
-                    <div class="comentario_izquierdo">
-                        <img class="comentario_ilustracion" src="./recursos/fotos/comentario.png" alt="comentario ilustración">
-                        <img class="ilustracion_sombra-comentario" src="./recursos/fotos/sombra.png" alt="sombra">
-                    </div>
-                    <div class="comentario_derecho">
-                        <p class="comentario_texto">¡Lo que piensas de nosotros nos importa! Deja <span>tu comentario y comparte tus pensamientos</span> con nosotros.</p>
-                        <a href="./comentarios.php" class="comentario_link">¡Comentar!</a>
-                        <img src="./recursos/iconos/proximo.png" alt="flecha" class="comentario_flecha">
-                    </div>
+    <section id="contactanos">
+        <div class="contenedor_comentarios">
+            <h2 class="comentario_titulo">
+                Contacta con <span>nosotros</span>
+            </h2>
+            <div class="contenedor_comentario-ilustracion elemento">
+                <div class="comentario_izquierdo">
+                    <img class="comentario_ilustracion" src="./recursos/fotos/comentario.png"
+                        alt="comentario ilustración">
+                    <img class="ilustracion_sombra-comentario" src="./recursos/fotos/sombra.png" alt="sombra">
+                </div>
+                <div class="comentario_derecho">
+                    <p class="comentario_texto"><span>¿Listo para aventurarte?</span> Ponte en contacto con nosotros
+                        para asistir a nuestras excursiones y obtener más información.</p>
+                    <button class="comentario_link">¡Quiero contactar!</button>
+                    <img src="./recursos/iconos/proximo.png" alt="flecha" class="comentario_flecha">
                 </div>
             </div>
+
+            <div class="comentario_formulario">
+                <!-- <form class="contacto_formulario" action="https://formsubmit.co/robinfloow77@gmail.com" method="POST">  -->
+                <form class="contacto_formulario" action="./php/index.php" method="POST">
+                    <div class="input-container">
+                        <input class="contacto_input contact_input-nombre" type="text" id="nombre" name="nombre"
+                            required placeholder="Nombre" minlength="5" maxlength="50" data-tipo="nombre">
+                        <label class="input-label" for="nombre">Nombre</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input class="contacto_input contact_input-email" type="email" id="email" name="email" required
+                            placeholder="E-mail" minlength="5" maxlength="30" data-tipo="email">
+                        <label class="input-label" for="email">Correo</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input class="contacto_input contact_input-asunto" type="text" id="asunto" name="asunto"
+                            required placeholder="Asunto" minlength="3" maxlength="30" data-tipo="asunto">
+                        <label class="input-label" for="asunto">Asunto</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <textarea class="contacto_text-area  contact_input-mensaje" id="mensaje" name="mensaje" required placeholder="Mensaje" minlength="10" maxlength="1000"></textarea>
+                    
+                    <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html">
+                    <input type="hidden" name="_captcha" value="false"> -->
+                    <button class="contacto_boton" type="submit">Enviar</button>
+                    
+            </form>
+            <div class="comentario_redes-sociales">
+                <p>O comunícate directamente con nosotros a través de <span>nuestras redes sociales.</span></p>
+                <img src="./recursos/iconos/proximo-2.png" alt="flecha">
+            </div>
+            </div>
+        </div>
     </section>
     <!--! FIN SECCION COMENTARIOS -->
 
@@ -443,10 +498,10 @@
                             <img class="footer_icono footer_icono-1" src="./recursos/iconos/flecha.png" />
                         </div>
                         <div class="respuesta_pregunta-1 respuesta_pregunta">
-                            <p>Nuestras excursiones más populares incluyen visitas a la Isla Saona, 
-                                recorridos en buggys emocionantes, paseos a caballo a través de 
-                                paisajes impresionantes y días de relax en Playa Macao. Estas son 
-                                solo algunas de las emocionantes experiencias que ofrecemos para 
+                            <p>Nuestras excursiones más populares incluyen visitas a la Isla Saona,
+                                recorridos en buggys emocionantes, paseos a caballo a través de
+                                paisajes impresionantes y días de relax en Playa Macao. Estas son
+                                solo algunas de las emocionantes experiencias que ofrecemos para
                                 que descubras lo mejor de la República Dominicana.</p>
                         </div>
                     </div>
@@ -457,27 +512,28 @@
                             <img class="footer_icono footer_icono-2" src="./recursos/iconos/flecha.png" />
                         </div>
                         <div class="respuesta_pregunta-2 respuesta_pregunta">
-                            <p>La duración de nuestras excursiones varía según la actividad. Por ejemplo, 
-                                nuestros paseos en buggy suelen durar alrededor de 3-4 horas, mientras 
-                                que las excursiones a la Isla Saona pueden llevar un día completo. Te 
-                                recomendamos verificar la duración específica de cada actividad en la 
+                            <p>La duración de nuestras excursiones varía según la actividad. Por ejemplo,
+                                nuestros paseos en buggy suelen durar alrededor de 3-4 horas, mientras
+                                que las excursiones a la Isla Saona pueden llevar un día completo. Te
+                                recomendamos verificar la duración específica de cada actividad en la
                                 descripción detallada de cada tour contactando con nosotros.</p>
                         </div>
                     </div>
 
                     <div class="footer_pregunta-3 footer_preguntas--contenedor">
                         <div class="titulo_pregunta titulo_pregunta-3">
-                            <p class="footer_cuestion">¿Qué medidas de seguridad implementan durante las excursiones?</p>
+                            <p class="footer_cuestion">¿Qué medidas de seguridad implementan durante las excursiones?
+                            </p>
                             <img class="footer_icono footer_icono-3" src="./recursos/iconos/flecha.png" />
                         </div>
                         <div class="respuesta_pregunta-3 respuesta_pregunta">
-                            <p>La seguridad de nuestros clientes es nuestra máxima prioridad. Nuestros 
-                                guías altamente capacitados y experimentados se aseguran de que todas las 
-                                actividades se realicen de manera segura. Proporcionamos equipo de 
-                                protección cuando sea necesario, como cascos en los paseos en buggy, 
-                                y seguimos estrictas pautas de seguridad en cada actividad. Además, 
-                                nuestras excursiones son adecuadas para todas las edades y niveles 
-                                de experiencia, y siempre estamos disponibles para responder a cualquier 
+                            <p>La seguridad de nuestros clientes es nuestra máxima prioridad. Nuestros
+                                guías altamente capacitados y experimentados se aseguran de que todas las
+                                actividades se realicen de manera segura. Proporcionamos equipo de
+                                protección cuando sea necesario, como cascos en los paseos en buggy,
+                                y seguimos estrictas pautas de seguridad en cada actividad. Además,
+                                nuestras excursiones son adecuadas para todas las edades y niveles
+                                de experiencia, y siempre estamos disponibles para responder a cualquier
                                 pregunta o preocupación relacionada con la seguridad que puedas tener.</p>
                         </div>
                     </div>
@@ -495,7 +551,8 @@
                                 target="_blank"><img src="./recursos/iconos/telefono.png" alt="teléfonos">
                                 <p><span>2</span>+1(809) 907-7529</p>
                             </a></li>
-                        <li><a href="https://maps.app.goo.gl/PzZ9otQuGDmVq4af7" target="_blank"><img src="./recursos/iconos/ubicacion.png" alt="ubicación">
+                        <li><a href="https://maps.app.goo.gl/PzZ9otQuGDmVq4af7" target="_blank"><img
+                                    src="./recursos/iconos/ubicacion.png" alt="ubicación">
                                 <p>Punta Cana</p>
                             </a></li>
                     </ul>
@@ -505,11 +562,13 @@
             <div class="footer_redes-sociales">
                 <hr class="redes_linea-decorativa">
                 <ul>
-                    <li class="redes_icono"><a class="redes_icono-link" href="https://www.facebook.com/profile.php?id=61551477692491"
-                            target="_blank"><img src="./recursos/iconos/facebook.png" /></a></li>
+                    <li class="redes_icono"><a class="redes_icono-link"
+                            href="https://www.facebook.com/profile.php?id=61551477692491" target="_blank"><img
+                                src="./recursos/iconos/facebook.png" /></a></li>
                     <li class="redes_icono"><a class="redes_icono-link" href="https://instagram.com/dreamycontrytourdr"
                             target="_blank"><img src="./recursos/iconos/instagram.png" /></a></li>
-                    <li class="redes_icono"><a class="redes_icono-link" href="https://wa.me/18299804873?text=¡Hola! Vengo desde la página web :)"
+                    <li class="redes_icono"><a class="redes_icono-link"
+                            href="https://wa.me/18299804873?text=¡Hola! Vengo desde la página web :)"
                             target="_blank"><img src="./recursos/iconos/whatsapp.png" /></a></li>
                     <!-- <li class="redes_icono"><a class="redes_icono-link" href="https://instagram.com/dreamycontrytourdr"
                             target="_blank"><img src="./recursos/iconos/tik-tok.png" /></a></li> -->
@@ -521,15 +580,21 @@
                 <h2 class="copyrigth_desarrollo">Copyright &copy; Dreamy Country Tour</h2>
                 <h3 class="copyrigth_desarrollo">2023</h3>
             </div>
+            <div class="firma_personal-contenedor">
+                <p>Desarrollado por</p>
+                <a href="https://github.com/robinfdezz" target="_blank">@robindeveloper</a>
+            </div>
         </div>
     </section>
 
     <!--? ARCHIVOS JS PARA FUNCIONALIDADES-->
+    <script src="./js/script.js" type="module"></script>
     <script src="./scripts/navegacion.js"></script>
     <script src="./scripts/preguntasFrecuentes.js"></script>
     <script src="./scripts/boton_arriba.js"></script>
     <script src="./scripts/carrusel.js"></script>
     <script src="./scripts/scroll_aparicion.js"></script>
+    
 </body>
 
 </html>
