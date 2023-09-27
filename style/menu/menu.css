@@ -37,6 +37,7 @@
     align-items: center;
     cursor: pointer;
     transition: 0.2s ease;
+    box-shadow: 0 0 7px #0000001b;
 }
 
 .menu_contenedor--boton:hover {
@@ -250,9 +251,9 @@
     .menu_contacto--link {
         padding: 15px 20px;
         background-color: #1D90DF;
-        border-radius: 10px;
+        border-radius: 0px;
         cursor: pointer;
-    }
+}
 
     .menu_contacto--link:hover {
         background-color: #0055b1;

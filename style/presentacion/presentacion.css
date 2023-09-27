@@ -23,7 +23,6 @@
     padding: 10px 15px 0 15px;
 }
 
-
 @media screen and (max-width: 601px) {
     .con-salto::before {
         content: "\A";
@@ -40,6 +39,7 @@
 
 .escritura_parpadeo {
     animation: cursorEscritura 2s infinite;
+    -webkit-animation: cursorEscritura 2s infinite;
 }
 
 .presentacion_titulo .titulo {
@@ -84,14 +84,14 @@
 .presentacion--link {
     padding: 15px 20px;
     background-color: #1D90DF;
-    border-radius: 10px;
+    border-radius: 0px;
     cursor: pointer;
 }
 
 .presentacion--link:hover {
     background-color: #0055b1;
     transition: 0.2s ease;
-    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.273);
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.174);
 }
 
 
@@ -159,6 +159,7 @@
     .presentacion_contenedor {
         flex-direction: row;
         height: calc((100vh) - (60px));
+        min-height: 500px;
         background-image: url('../../recursos/fotos/vector-lineas.png');
         background-position: center bottom;
     }
@@ -209,7 +210,6 @@
     }
 
     50% {
-        opacity: 1;
-        color: #005e9d;
+        opacity: 0.4;
     }
 }
