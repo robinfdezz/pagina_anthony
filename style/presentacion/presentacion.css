@@ -23,7 +23,22 @@
     padding: 10px 15px 0 15px;
 }
 
-.escritura_parpadeo{
+
+@media screen and (max-width: 601px) {
+    .con-salto::before {
+        content: "\A";
+        /* Pseudo-elemento de línea nueva */
+    }
+
+    .con-salto::after {
+        content: "\A";
+        /* Pseudo-elemento de línea nueva */
+        white-space: pre;
+        /* Espaciado preservado */
+    }
+}
+
+.escritura_parpadeo {
     animation: cursorEscritura 2s infinite;
 }
 
@@ -79,6 +94,9 @@
     box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.273);
 }
 
+
+
+
 /*! Para hacerlo responsive */
 /* Estilos para tablet (de 601px a 1024px) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -95,16 +113,29 @@
     }
 
     .presentacion_titulo {
-        font-size: 2rem;
+        font-size: 3.2rem;
         padding: 0 0 0 20px;
     }
 
+    .con-salto::before {
+        content: "\A";
+        /* Pseudo-elemento de línea nueva */
+    }
+
+    .con-salto::after {
+        content: "\A";
+        /* Pseudo-elemento de línea nueva */
+        white-space: pre;
+        /* Espaciado preservado */
+    }
+
     .presentacion_titulo .titulo {
-        font-size: 3.4rem;
+        font-size: 3.8rem;
     }
 
     .presentacion_descripcion {
         padding: 0 10px 0 20px;
+        font-size: 1.6rem;
     }
 
     .presentacion_contenedor--derecho {
@@ -175,10 +206,10 @@
         opacity: 1;
         color: #1D90DF;
 
-}
+    }
 
     50% {
         opacity: 1;
         color: #005e9d;
-}
+    }
 }
