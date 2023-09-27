@@ -348,6 +348,16 @@
         animation: sombra 8s infinite;
     }
 
+    .ilustracion-4 {
+        animation: FiguraFlotante 8s infinite;
+        width: 300px;
+    }
+
+    .ilustracion-sombra-4 {
+        width: 150px;
+        animation: sombra 8s infinite;
+    }
+
     /*! PARA EL CARRUSEL */
     .slider {
         height: 100%;
@@ -379,6 +389,14 @@
     }
 
     .contenedor_excursion--caballos .cartas_excursiones {
+        order: 2;
+    }
+
+    .contenedor_excursion--playas .cartas_excursiones .foto_excursion {
+        order: 2;
+    }
+
+    .contenedor_excursion--playas .cartas_excursiones {
         order: 2;
     }
 }

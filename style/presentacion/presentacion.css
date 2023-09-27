@@ -23,11 +23,16 @@
     padding: 10px 15px 0 15px;
 }
 
-.presentacion_titulo span {
+.escritura_parpadeo{
+    animation: cursorEscritura 2s infinite;
+}
+
+.presentacion_titulo .titulo {
     font-family: 'Ubuntu';
     font-size: 3.4rem;
     font-weight: 700;
     color: #1D90DF;
+    display: block;
 }
 
 .presentacion_descripcion {
@@ -94,7 +99,7 @@
         padding: 0 0 0 20px;
     }
 
-    .presentacion_titulo span {
+    .presentacion_titulo .titulo {
         font-size: 3.4rem;
     }
 
@@ -138,7 +143,7 @@
         color: #4b4b4b;
     }
 
-    .presentacion_titulo span {
+    .presentacion_titulo .titulo {
         font-size: 5rem;
     }
 
@@ -161,4 +166,19 @@
     .presentacion_contacto {
         display: none;
     }
+}
+
+@keyframes cursorEscritura {
+
+    0%,
+    100% {
+        opacity: 1;
+        color: #1D90DF;
+
+}
+
+    50% {
+        opacity: 1;
+        color: #005e9d;
+}
 }

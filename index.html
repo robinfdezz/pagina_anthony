@@ -82,7 +82,7 @@
     <section id="presentacion">
         <div class="presentacion_contenedor">
             <div class="presentacion_contenedor--izquierdo">
-                <h1 class="presentacion_titulo">Agencia de viajes <span>Dream Country Tour</span></h1>
+                <h1 class="presentacion_titulo">Agencia de <span id="changing-text"></span><span class="escritura_parpadeo">|</span><span class="titulo">Dream Country Tour</span></h1>
                 <h2 class="presentacion_descripcion">Descubre el Paraíso Dominicano con nosotros. Somos una
                     agencia de viajes urbanos y paseos turísticos, tu Puerta a las Mejores Aventuras en el País.</h2>
                 <div class="presentacion_contacto">
@@ -95,11 +95,6 @@
         </div>
     </section>
     <!--! FIN SECCION PRESENTACION -->
-
-
-
-
-
 
     <!--? SECCION PARA LOS VIAJES -->
     <section id="viajes">
@@ -250,12 +245,85 @@
                 </div>
             </div>
 
-
-            <div class="contenedor_carta  contenedor_excursion--buggys elemento">
+            <div class="contenedor_carta  contenedor_excursion--zipline elemento">
                 <div class="cartas_excursiones">
                     <div class="foto_excursion">
 
                         <div class="slider slider3">
+                            <div class="list">
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/zip-line/1.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/zip-line/2.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/zip-line/3.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/zip-line/4.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/zip-line/5.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/zip-line/6.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/zip-line/7.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/zip-line/8.webp" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./recursos/fotos/Excursiones/zip-line/9.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button class="prev"><img src="./recursos/iconos/izquierda-flecha.png"
+                                        alt="flecha"></button>
+                                <button class="next"><img src="./recursos/iconos/derecha-flecha.png"
+                                        alt="flecha"></button>
+                            </div>
+                            <ul class="dots">
+                                <li class="active"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="informacion_excursion">
+                        <h3 class="informacion_titulo">Tour Zipline</h3>
+                        <div class="informacion_iconos">
+                            <img src="./recursos/iconos/zipline-1.png" alt="icono">
+                            <img src="./recursos/iconos/zipline-2.png" alt="icono">
+                            <img src="./recursos/iconos/zipline-3.png" alt="icono">
+                        </div>
+                        <p class="informacion_descripcion">
+                            <span>¡Embárcate en una emocionante travesía por los cielos con nuestro inigualable Tour de Zipline!</span> 
+                            Sumérgete en una aventura llena de maravillas y emociones espectaculares que te dejarán sin aliento.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contenedor_ilustracion contenedor_ilustracion--3">
+                    <img class="ilustracion-3" src="./recursos/fotos/cocos-ilustracion.png" alt="ilustracion">
+                    <img class="ilustracion-sombra-3" src="./recursos/fotos/sombra.png" alt="sombra">
+                </div>
+            </div>
+
+            <div class="contenedor_carta  contenedor_excursion--playas elemento">
+                <div class="cartas_excursiones">
+                    <div class="foto_excursion">
+
+                        <div class="slider slider4">
                             <div class="list">
                                 <div class="item">
                                     <img src="./recursos/fotos/Excursiones/playa/1.webp" alt="">
@@ -322,10 +390,11 @@
                 </div>
 
                 <div class="contenedor_ilustracion contenedor_ilustracion--3">
-                    <img class="ilustracion-3" src="./recursos/fotos/playa-ilustracion.png" alt="ilustracion">
-                    <img class="ilustracion-sombra-3" src="./recursos/fotos/sombra.png" alt="sombra">
+                    <img class="ilustracion-4" src="./recursos/fotos/playa-ilustracion.png" alt="ilustracion">
+                    <img class="ilustracion-sombra-4" src="./recursos/fotos/sombra.png" alt="sombra">
                 </div>
             </div>
+
             <a href="./excursiones.html" class="viajes_saber-mas">Ver más</a>
         </div>
     </section>
@@ -583,7 +652,7 @@
             </div>
             <div class="firma_personal-contenedor">
                 <p>Desarrollado por</p>
-                <a href="https://github.com/robinfdezz" target="_blank">@robindeveloper</a>
+                <a href="https://robinfdezz.github.io/mi-portafolio/" target="_blank">@robindeveloper</a>
             </div>
         </div>
     </section>
@@ -595,7 +664,7 @@
     <script src="./scripts/boton_arriba.js"></script>
     <script src="./scripts/carrusel.js"></script>
     <script src="./scripts/scroll_aparicion.js"></script>
-    
+    <script src="./scripts/texto_animado.js"></script>
 </body>
 
 </html>

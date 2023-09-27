@@ -62,3 +62,5 @@ const carousel1 = initializeCarousel('slider1', 5000);
 const carousel2 = initializeCarousel('slider2', 9000);
 
 const carousel3 = initializeCarousel('slider3', 7000);
+
+const carousel4 = initializeCarousel('slider4', 8000);
