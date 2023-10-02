@@ -38,8 +38,8 @@
 }
 
 .escritura_parpadeo {
-    animation: cursorEscritura 2s infinite;
-    -webkit-animation: cursorEscritura 2s infinite;
+    animation: cursorEscritura 1.5s infinite;
+    -webkit-animation: cursorEscritura 1.5s infinite;
 }
 
 .presentacion_titulo .titulo {
